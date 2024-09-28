@@ -14,7 +14,7 @@ export function NewItem() {
 
   return (
     <div className="bg-red-100 rounded-lg shadow-md w-52 h-16 flex items-center justify-center">
-      <p className="text-xl w-12 text-center">{quantity}</p>
+      <p className="text-xl w-12 text-center text-black">{quantity}</p>
       <button
         onClick={increment}
         disabled={quantity === 20}
