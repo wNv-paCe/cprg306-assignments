@@ -52,6 +52,7 @@ export function NewItem() {
               <p className="text-xl w-10 text-center text-black">{quantity}</p>
               <div className=" text-white font-bold text-lg flex items-center space-x-1">
                 <button
+                  type="button"
                   onClick={increment}
                   disabled={quantity === 20}
                   className="bg-red-500 w-8 h-8 rounded m-2 disabled:opacity-50 flex items-center justify-center"
@@ -59,6 +60,7 @@ export function NewItem() {
                   +
                 </button>
                 <button
+                  type="button"
                   onClick={decrement}
                   disabled={quantity === 1}
                   className="bg-green-500 w-8 h-8 rounded m-2 disabled:opacity-50 flex items-center justify-center"
