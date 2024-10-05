@@ -34,7 +34,7 @@ export function NewItem() {
 
   return (
     <main>
-      <div className="w-80 max-w-md shadow-md bg-red-100 p-4 rounded-lg">
+      <div className="w-80 shadow-md bg-red-100 p-4 rounded-lg">
         <form onSubmit={handleSubmit}>
           {/* Name input */}
           <input
@@ -49,13 +49,15 @@ export function NewItem() {
           {/* Quantity and category inputs */}
           <div className="w-full flex items-center justify-center space-x-4">
             <div className="w-1/2 p-2 flex items-center">
-              <p className="text-xl w-10 text-center text-black">{quantity}</p>
-              <div className=" text-white font-bold text-lg flex items-center space-x-1">
+              <p className="text-xl w-14 font-semibold text-center text-black">
+                {quantity}
+              </p>
+              <div className=" text-white text-3xl flex items-center space-x-1">
                 <button
                   type="button"
                   onClick={increment}
                   disabled={quantity === 20}
-                  className="bg-red-500 w-8 h-8 rounded m-2 disabled:opacity-50 flex items-center justify-center"
+                  className="bg-red-500 w-8 h-8 rounded disabled:opacity-50 flex items-center justify-center"
                 >
                   +
                 </button>
@@ -63,7 +65,7 @@ export function NewItem() {
                   type="button"
                   onClick={decrement}
                   disabled={quantity === 1}
-                  className="bg-green-500 w-8 h-8 rounded m-2 disabled:opacity-50 flex items-center justify-center"
+                  className="bg-green-500 h-8 w-8 rounded disabled:opacity-50 flex items-center justify-center"
                 >
                   -
                 </button>
@@ -97,7 +99,7 @@ export function NewItem() {
           {/* Submit button */}
           <button
             type="submit"
-            className="bg-gray-500 text-white p-2 rounded-lg w-full hover:bg-black text-lg"
+            className="text-lg mt-2 p-2 font-bold bg-gray-500 text-white rounded-lg w-full hover:bg-black"
           >
             +
           </button>
