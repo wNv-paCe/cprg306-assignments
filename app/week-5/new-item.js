@@ -79,9 +79,10 @@ export function NewItem() {
                 onChange={(event) => setCategory(event.target.value)}
                 className="w-full text-black shadow-md p-2 h-10 rounded-lg"
               >
-                <option value="produce" disabled>
-                  Produce
+                <option value="category" disabled>
+                  Category
                 </option>
+                <option value="produce">Produce</option>
                 <option value="dairy">Dairy</option>
                 <option value="bakery">Bakery</option>
                 <option value="meat">Meat</option>
