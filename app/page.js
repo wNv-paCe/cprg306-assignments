@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 export default function Page() {
+  const weeks = [2, 3, 4, 5];
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between text-sm">
@@ -9,18 +11,11 @@ export default function Page() {
         </h1>
         <div className="text-lg">
           <ul>
-            <li className="hover:text-green-400 hover:underline">
-              <Link href="/week-2">Week 2</Link>
-            </li>
-            <li className="hover:text-green-400 hover:underline">
-              <Link href="/week-3">Week 3</Link>
-            </li>
-            <li className="hover:text-green-400 hover:underline">
-              <Link href="/week-4">Week 4</Link>
-            </li>
-            <li className="hover:text-green-400 hover:underline">
-              <Link href="/week-5">Week 5</Link>
-            </li>
+            {weeks.map((week) => (
+              <li key={week} className="hover:text-green-400 hover:underline">
+                <Link href={`/week-${week}`}>Week {week}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
