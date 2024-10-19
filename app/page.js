@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Page() {
-  const weeks = [2, 3, 4, 5, 6];
+  const weeks = [2, 3, 4, 5, 6, 7];
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
