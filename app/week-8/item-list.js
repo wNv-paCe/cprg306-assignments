@@ -59,7 +59,7 @@ export function ItemList({ items, onItemSelect }) {
               : "bg-blue-400 text-black"
           }`}
         >
-          Grouped Category
+          Groupe
         </button>
       </div>
 

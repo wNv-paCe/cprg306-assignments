@@ -35,7 +35,7 @@ export function NewItem({ onAddItem }) {
 
   return (
     <main>
-      <div className="w-96 shadow-md bg-red-100 p-4 m-4 rounded-lg">
+      <div className="w-4/5 shadow-md bg-red-100 p-4 m-4 rounded-lg">
         <form onSubmit={handleSubmit}>
           {/* Name input */}
           <input

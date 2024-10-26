@@ -76,7 +76,7 @@ export function MealIdeas({ ingredient }) {
               <li
                 key={meal.idMeal}
                 onClick={() => handleMealClick(meal.idMeal)}
-                className="cursor-pointer hover:bg-red-500 bg-red-200 rounded-lg p-2 my-1 w-96 text-black"
+                className="cursor-pointer hover:bg-red-400 bg-red-200 rounded-lg p-2 my-1 w-96 text-black"
               >
                 {/* Meal name */}
                 <h3 className="font-semibold">{meal.strMeal}</h3>
