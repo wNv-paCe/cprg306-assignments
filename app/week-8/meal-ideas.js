@@ -47,11 +47,18 @@ export function MealIdeas({ ingredient }) {
 
   useEffect(() => {
     loadMealIdeas();
+    setSelectedMealId(null);
+    setSelectedMealIngredients([]);
   }, [ingredient]);
 
   const handleMealClick = (mealId) => {
-    setSelectedMealId(mealId);
-    loadMealDetails(mealId);
+    if (selectedMealId === mealId) {
+      setSelectedMealId(null);
+      setSelectedMealIngredients([]);
+    } else {
+      setSelectedMealId(mealId);
+      loadMealDetails(mealId);
+    }
   };
 
   return (
